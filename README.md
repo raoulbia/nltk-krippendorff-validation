@@ -6,7 +6,7 @@ The goal of this script is to validate the nltk implementation of the krippendor
   * Krippendorff's ordinal alpha of the evaluation dataset is reported as `0.7598`. 
   * The implementation of the NLTK agreement module returns a Krippendorff alpha value of `0.2058`. 
 
-** As of 28/02/2017**
+**As of 28/02/2017**
    * The Kalpha [implementation by Thomas Grill] (<https://github.com/grrrr/krippendorff-alpha>) returns the values as reported in the paper.
      
      ```
