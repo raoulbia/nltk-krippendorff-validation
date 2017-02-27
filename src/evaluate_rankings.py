@@ -13,12 +13,12 @@ def nltk_with_kippendorff_data():
 
     input_eval_dp = "../data/krippendorff-evaluation-dataset.csv"
 
-    rcsi_eval_df = pd.read_table(input_eval_dp, delimiter=',', index_col=0)
-    print(rcsi_eval_df.head())
+    eval_df = pd.read_table(input_eval_dp, delimiter=',', index_col=0)
+    print(eval_df.head())
 
     # reshape rcsi data
     rcsi_eval_nltk_df = pd.DataFrame()
-    for index, row in rcsi_eval_df.iterrows():
+    for index, row in eval_df.iterrows():
         rcsi_eval_nltk_df = rcsi_eval_nltk_df.append({'coder': 'obs_1', 'item': index, 'label': row['obs1']},
                                                      ignore_index=True)
         rcsi_eval_nltk_df = rcsi_eval_nltk_df.append({'coder': 'obs_2', 'item': index, 'label': row['obs2']},
