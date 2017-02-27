@@ -1,17 +1,18 @@
 # nltk-krippendorff-validation
 
-The goal of this script is to validate the nltk implementation of the krippendorff agreement coefficient with a published evaluation dataset.
+The goal of this script is to validate the nltk implementation of the Krippendorff agreement coefficient alpha (Kalpha) with an evaluation dataset used in Hayes and Krippendorff, 2007.
 
-**As of 27/02/2017**: investigating why the alpha values don't match.
+
+**As of 27/02/2017**: investigating why the Kalpha values don't match.
   * Krippendorff's ordinal alpha of the evaluation dataset is reported as `0.7598`. 
   * The implementation of the NLTK agreement module returns a Krippendorff alpha value of `0.2058`. 
 
-**As of 28/02/2017**
-   * The Kalpha [implementation by Thomas Grill] (<https://github.com/grrrr/krippendorff-alpha>) returns the values as reported in the paper.
+
+**As of 28/02/2017**: the Kalpha [implementation by Thomas Grill] (<https://github.com/grrrr/krippendorff-alpha>) returns the values as reported in the paper.
      
      ```
      Thomas Grill Kalpha nominal metric: 0.477
-     Thomas Grill  Kalpha interval metric: 0.757
+     Thomas Grill Kalpha interval metric: 0.757
      ```
    
 
