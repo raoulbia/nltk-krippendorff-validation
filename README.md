@@ -1,4 +1,4 @@
-# nltk-kippendorff-validation
+# nltk-krippendorff-validation
 
 The goal of this script is to validate the nltk implementation of the krippendorff agreement coefficient with a published evaluation dataset.
 
